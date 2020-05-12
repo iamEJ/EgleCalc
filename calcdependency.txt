@@ -1,0 +1,7 @@
+added manifest
+adding: lt/(in = 0) (out= 0)(stored 0%)
+adding: lt/vtmc/(in = 0) (out= 0)(stored 0%)
+adding: lt/vtmc/ems/(in = 0) (out= 0)(stored 0%)
+adding: lt/vtmc/ems/AppMenu.class(in = 2118) (out= 1219)(deflated 42%)
+adding: lt/vtmc/ems/AppMenu.java(in = 1652) (out= 548)(deflated 66%)
+adding: lt/vtmc/ems/Main.java(in = 203) (out= 141)(deflated 30%)
