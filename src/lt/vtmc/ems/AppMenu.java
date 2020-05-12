@@ -33,6 +33,9 @@ public class AppMenu {
         } else if (op.equals("*")) {
             z = x * y;
         } else if (op.equals("/")) {
+		if(y==0) {
+        	     System.out.println("Error! Dividing by zero is not allowed.");
+        	}
             z = x / y;
         } else {
             throw new Exception("Operator not recognized");
