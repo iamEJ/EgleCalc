@@ -1,3 +1,9 @@
-Manifest-Version: 1.0
-Created-By: 11.0.7 (Oracle Corporation)
-Main-Class: lt.vtmc.ems.Main
+Main.class -> java.base
+   lt.vtmc.ems
+   -> java.lang      
+	java.base
+AppMenu.class -> java.base
+   lt.vtmc.ems                                        -> java.io                                            java.base
+   lt.vtmc.ems                                        -> java.lang                                          java.base
+   lt.vtmc.ems                                        -> java.lang.invoke                                   java.base
+   lt.vtmc.ems                                        -> java.util                                          java.base
