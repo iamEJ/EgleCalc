@@ -18,13 +18,13 @@ public class AppMenu {
     private void arithmeticCalculateMenu() throws Exception {
         // TODO
         System.out.print("First number: ");
-        int x = Integer.parseInt(input.next());
+        double x = Double.parseDouble(input.next());
         System.out.print("Second number: ");
-        int y = Integer.parseInt(input.next());
+        double y = Double.parseDouble(input.next());
         System.out.print("Operator: ");
         String op = input.next();
 
-        int z = 0;
+        double z = 0;
 
         if (op.equals("+")) {
             z = x + y;
@@ -33,6 +33,9 @@ public class AppMenu {
         } else if (op.equals("*")) {
             z = x * y;
         } else if (op.equals("/")) {
+		if(y==0) {
+        	     System.out.println("Error! Dividing by zero is not allowed.");
+        	}
             z = x / y;
         } else {
             throw new Exception("Operator not recognized");
