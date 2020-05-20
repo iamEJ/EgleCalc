@@ -6,6 +6,8 @@ public class AppMenu {
     private char exit;
     private Scanner input = new Scanner(System.in);
 
+	
+
     public void mainMenu() throws Exception {
         // TODO
 	System.out.println("Simple Java calculator ver. 1.0");
