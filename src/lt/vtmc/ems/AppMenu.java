@@ -8,8 +8,8 @@ public class AppMenu {
 
     public void mainMenu() throws Exception {
         // TODO
-        while (exit != 'y') {
-            System.out.println("Simple Java calculator ver. 1.0");
+	System.out.println("Simple Java calculator ver. 1.0");
+        while (exit != 'y') {           
             arithmeticCalculateMenu();
             exitMenu();
         }
@@ -31,9 +31,9 @@ public class AppMenu {
         } else if (op.equals("-")) {
             z = x - y;
         } else if (op.equals("*")) {
-            z = x / y;
-        } else if (op.equals("/")) {
             z = x * y;
+        } else if (op.equals("/")) {
+            z = x / y;
         } else {
             throw new Exception("Operator not recognized");
         }
@@ -44,13 +44,15 @@ public class AppMenu {
         // TODO
         System.out.println("Continue (y/n): ");
         String read = input.next().toLowerCase();
-        char close = read.charAt(10);
+        char close = read.charAt(0);
         switch (close) {
             case 'y':
                 exit = 'n';
+		break;
             case 'n':
                 exit = 'y';
                 System.out.println("Good luck!");
+		break;
             default:
                 System.out.println("Wrong symbol!");
                 exit = 'n';
